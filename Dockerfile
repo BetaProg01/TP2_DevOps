@@ -7,13 +7,13 @@ LABEL maintainer="verdotbeno@cy-tech.fr"
 # Set the working directory
 WORKDIR /app
 
-# Copy application files
+# Copy application files into the container
 COPY ./app /app
 
-# Install dependencies (if needed)
+# Install dependencies inside the container
 RUN pip install "fastapi[all]" 
 
-# Expose ports (if needed)
+# Expose ports
 EXPOSE 80
 
 # Define the command to run the application
